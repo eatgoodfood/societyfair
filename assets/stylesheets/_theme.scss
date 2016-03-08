@@ -90,3 +90,23 @@ $menu-background: #292c2f;
     }
   }
 }
+
+// copy and paste block for success alert box
+
+.alert-box {
+  background: #f7f7f7;
+  color: #333;
+  border: none;
+  border-left: 6px solid #008CBA;
+  box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+  
+  &.success {
+    background: #f7f7f7;
+    color: #333;
+  }
+
+  .close {
+    font-size: 2rem;
+    line-height: 1.25rem;
+  }
+}

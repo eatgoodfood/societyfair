@@ -3,13 +3,30 @@
 //
 
 // Set styles for parties form
-.parties-wrapper {	
-	@include grid-column(12);
+
+section.parties-form {
 
 	@include breakpoint(medium) {
-		@include grid-column(8);
-		@include grid-column-offset(2);
-		@include grid-column-end;
+		background: #333;
+	}
+}
+
+form.parties {	
+	background: #fff;
+
+	@include breakpoint(medium) {
+		padding: 1rem 2rem;
+		margin: 2rem 0;
+	}
+
+	h1 {
+		margin: 2rem 0 2rem 0;
+		text-align: left;
+
+		@include breakpoint(medium) {
+			margin: 1rem 0 2rem 0;
+			text-align: center;
+		}
 	}
 
 	.gotcha {
@@ -18,6 +35,17 @@
 	
 	fieldset {
 		@extend .fieldset;
+
+		@include breakpoint(medium) {
+			border: 3px solid #efefef;
+		}
+
+		legend {
+
+			@include breakpoint(medium) {
+				font-weight: bold;
+			}
+		}
 
 		.field {
 			@include grid-row;
@@ -35,8 +63,12 @@
 		}
 	}
 
-	button {
-		@extend .button;
+	.submit-wrapper {
+		@extend .text-center;
+
+		button {
+			@extend .button;
+		}
 	}
 
 }

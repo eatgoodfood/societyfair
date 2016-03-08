@@ -45,25 +45,29 @@
   <div class="top-bar-right">
     <ul class="menu">
       <li><a href="#">Home</a></li>
+      <li><a href="#">Bistro</a></li>
+      <li><a href="#">Market</a></li>
       <li><a href="#">Menu</a></li>
       <li><a href="#">Hours</a></li>
+      <li><a href="#">Events</a></li>
       <li><a href="#">Parties</a></li>
       <li><a href="#">Catering</a></li>
     </ul>
   </div>
 </div>
 
-  <section>
+  <section class="parties-form">
 
-  <div class="parties-wrapper">
-	<form id="parties" class="parties" accept-charset="UTF-8"  action="//formspree.io/stephen@restauranteve.com" method="POST">
+  <div class="parties-wrapper small-12 medium-8 medium-offset-2 columns end">
+	<form id="parties-form" class="parties" accept-charset="UTF-8"  action="//formspree.io/stephen@restauranteve.com" method="POST">
+		<h1>Parties Enquiry</h1>
 		
 		<input type="hidden" name="utf8" value="✓">
 		<input type="hidden" name="_subject" value="New party request!" />
 		<input type="text" name="_gotcha" class="gotcha"/>
 
 		<fieldset> <!-- start fieldset 0 -->
-	    	<legend>Event type</legend>
+	    	<legend>What type of event are you planning?</legend>
 		  	<input type="checkbox" name="type[]" value="Breakfast" id="typeBreakfast"><label for="typeBreakfast">Breakfast</label>
 		  	<input type="checkbox" name="type[]" value="Lunch" id="typeLunch"><label for="typeLunch">Lunch</label>
 		  	<input type="checkbox" name="type[]" value="Brunch" id="typeBrunch"><label for="typeBrunch">Brunch</label>
@@ -112,7 +116,7 @@
 		</fieldset> <!-- end fieldset 1 -->
 
 		<fieldset> <!-- start fieldset 2 -->
-			<legend>Contact details</legend>
+			<legend>Your contact details</legend>
 			<div class="field">
 			    <div class="label-wrapper">
 			    	<label>Contact name
@@ -168,8 +172,9 @@
 				<input type="checkbox" name="source[]" value="Previous event" id="sourcePreviousEvent"><label for="sourcePreviousEvent">Previous event</label>
 			</div>
 		</fieldset> <!-- end fieldset 3 -->
-
-	  	<button type="submit" value="send">Send</button>
+		<div class="submit-wrapper">
+	  		<button type="submit" value="send">Send</button>
+	  	</div>
 	</form>
 </div>
 
