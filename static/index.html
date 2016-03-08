@@ -1,0 +1,194 @@
+
+
+
+<!doctype html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation-Jekyll - </title>
+
+    <meta name="description" content="The awesomeness of Foundation 6... powered by Jekyll" />
+    <meta name="author" content="username" />
+    <meta name="copyright" content=""/>
+
+    <!-- 404 Redirect -->
+    
+    <!-- /404 Redirect -->
+
+    <link rel="alternate" type="application/rss+xml" title="" href="http://yoururl.com/feed.xml">
+
+    <link rel="stylesheet" href="../../assets/stylesheets/style.css" />
+
+    <!-- Foundation Favicons -->
+    <link href="http://foundation-forum0.zurbstatic.com/assets/favicon-47a37f0a0e941bf5966d5d4e8a66de14.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700"/>
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://foundation-forum2.zurbstatic.com/assets/favicons/apple-touch-icon-144x144-precomposed-988ff9eec894c302f748ee817b9a2912.png">
+
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://foundation-forum2.zurbstatic.com/assets/favicons/apple-touch-icon-114x114-precomposed-8c2ef526523efe47e11e7af1068cf38d.png">
+
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://foundation-forum2.zurbstatic.com/assets/favicons/apple-touch-icon-72x72-precomposed-1cc97a9c68e5d59ae4f650c989e5354b.png">
+
+    <link rel="apple-touch-icon-precomposed" href="http://foundation-forum2.zurbstatic.com/assets/favicons/apple-touch-icon-precomposed-197a05ba144fa3c26d536f2295cc056e.png">
+
+  </head>
+  <body>
+
+
+  <section class="row support">
+    <div class="small-12 medium-8 medium-offset-2 large-offset-2 end columns">
+
+      <h1><i class="fa fa-barcode"></i> Foundation-Jekyll</h1>
+
+      <p>
+        The awesomeness of Foundation 6... powered by Jekyll
+      </p>
+
+      <h3>Version</h3>
+
+      <p>
+        Current - 1.5.0
+      </p>
+
+      <h3>About</h3>
+
+      <p>
+        Foundation-Jekyll is the quickest way to get started building static sites, prototypes, blogs, portfolios and much more. Foundation-Jekyll is flexible, yet highly customizable and ready to be deployed to Github Pages or your own hosting environment.
+      </p>
+
+      <p>
+        Foundation-Jekyll assumes the following:
+        <ul>
+          <li>Minimum comfort level using the Terminal</li>
+          <li>Development enviromnent setup (Homebrew, Ruby, xCode, etc...)</li>
+          <li>Some familiarity using Jekyll or are willing to get your hands dirty.</li>
+          <li>Love using Foundation to build websites</li>
+          <li>This project was created by @aaronkwhite in Colorful Colorado.</li>
+        </ul>
+      </p>
+
+      <h3>Get Started</h3>
+
+      <p>
+        Install Jekyll
+      </p>
+
+      <figure class="highlight"><pre><code class="language-shell-session" data-lang="shell-session">        $ gem install jekyll
+      </code></pre></figure>
+
+      <p>
+        Clone the repo and start building your site:
+      </p>
+
+      <figure class="highlight"><pre><code class="language-shell-session" data-lang="shell-session">        $ git clone git@github.com:aaronkwhite/foundation-jekyll.git foundation-jekyll
+      </code></pre></figure>
+
+      <p>The core components are located in the source directory, so you can better organize your content and structure.</p>
+
+<figure class="highlight"><pre><code class="language-shell-session" data-lang="shell-session">foundation-jekyll/
+├── _site/
+├── _source/
+    ├── _data/
+        ├── sample.json
+    ├── _drafts/
+        ├── 2014-12-14-draft-post.md
+    ├── _includes/
+        ├── header.html
+        ├── footer.html
+    ├── _layouts/
+        ├── default.html
+    ├── _posts/
+        ├── 2014-12-14-post-one.md
+        ├── 2014-12-14-post-two.md
+    ├── assets/
+        ├── fonts/
+        ├── images/
+        ├── javascripts/
+            ├── vendor/
+              ├── jquery/
+            ├── ...
+            ├── ...
+            ├── foundation.min.js
+            ├── ...
+            ├── ...
+            ├── motion-ui.js
+            ├── scripts.js
+        ├── stylesheets/
+          ├── components
+          ├── font-awesome/
+          ├── forms/
+          ├── grid/
+          ├── typography/
+          ├── util/
+          ├── vendor/
+          ├── _global.scss
+          ├── _settings.scss
+          ├── _theme.scss
+          ├── _variables.scss
+          ├── foundation.scss
+          ├── style.scss
+    ├── 404.html
+    ├── index.html
+    ├── feed.xml
+├── _config.yml
+├── .gitignore
+├── LICENSE
+├── README.md</code></pre></figure>
+      </p>
+
+      <p>
+       We're using Foundation &amp; Font-Awesome Sass compiled by Jekyll automatically when we build the source.
+     </p>
+
+     <p>
+       The primary stylesheet '/assets/stylessheets/style.scss' file is configured to include all necessary files for Foundation, Font-Awesome and your custom styles, just add your custom styles to '/assets/stylesheets/_theme.scss'.
+     </p>
+
+     <p>
+       To test your site locally just run:
+     </p>
+
+     <figure class="highlight"><pre><code class="language-shell-session" data-lang="shell-session">       $ jekyll serve
+     </code></pre></figure>
+
+      <p>
+          <em>Note:</em> Make sure you update your git remote before you try to push any changes.
+      </p>
+
+      <h3>Dependencies</h3>
+
+      <ul>
+        <li>ruby</li>
+        <li>Jekyll</li>
+        <li>kramdown</li>
+        <li>pygments</li>
+      </ul>
+
+      <h3>Support/Contributing</h3>
+
+      <p>
+        If you run into any issues or bugs, please create an issue in Github. Unfortunately I can't help everyone via email or twitter, I'm only one person.
+      </p>
+
+      <p>
+        If you would like to contribute to this repo, hit me up on twitter <a href="http://twitter.com/aaronkwhite">@aaronkwhite</a> and then we can talk pull requests.
+      </p>
+
+      <h3>License</h3>
+
+      <p>
+        <a href="http://opensource.org/licenses/MIT">MIT</a>
+      </p>
+
+  </div>
+</section>
+
+
+ <script src="../../assets/javascripts/vendor/jquery/jquery-2.1.4.min.js"></script>
+  <script src="../../assets/javascripts/foundation.min.js"></script>
+  <script src="../../assets/javascripts/scripts.js"></script>
+
+  </body>
+</html>
