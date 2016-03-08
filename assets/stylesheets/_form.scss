@@ -4,6 +4,8 @@
 
 // Set styles for parties form
 
+@import url(https://fonts.googleapis.com/css?family=Alex+Brush);
+
 section.parties-form {
 
 	@include breakpoint(medium) {
@@ -22,6 +24,7 @@ form.parties {
 	h1 {
 		margin: 2rem 0 2rem 0;
 		text-align: left;
+		font-family: 'Alex Brush', cursive;
 
 		@include breakpoint(medium) {
 			margin: 1rem 0 2rem 0;
