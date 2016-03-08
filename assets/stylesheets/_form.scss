@@ -3,7 +3,14 @@
 //
 
 // Set styles for parties form
-form.parties {	
+.parties-wrapper {	
+	@include grid-column(12);
+
+	@include breakpoint(medium) {
+		@include grid-column(8);
+		@include grid-column-offset(2);
+		@include grid-column-end;
+	}
 
 	.gotcha {
 		display: none;
