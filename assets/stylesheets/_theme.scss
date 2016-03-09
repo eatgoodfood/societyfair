@@ -1,6 +1,9 @@
 //
 // Foundation-Jekyll - Custom Theme Styles
 //
+body {
+  background-color: #333;
+}
 
 section {
 	@include grid-row;
