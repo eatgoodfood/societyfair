@@ -60,6 +60,27 @@ $menu-background: #292c2f;
 
 // copy and paste block for footer and header
 
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+.hero {
+  background: url('http://investors.eatgoodfoodgroup.com/img/society-fair.jpg') no-repeat center center;
+  background-size: contain;
+  height: 20vh;
+  overflow: hidden;
+  h1 {
+    color: #fff;
+    text-align: center;
+    @include vertical-align;
+  }
+}
+
 .footer {
   background-color: #292c2f;
   text-align: center;
