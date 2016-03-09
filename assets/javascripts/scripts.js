@@ -14,7 +14,7 @@ var $contactForm = $('#parties-form');
 $contactForm.submit(function(e) {
 	e.preventDefault();
 	$.ajax({
-		url: '//formspree.io/stephen@restauranteve.com',
+		url: '//formspree.io/parties@societyfair.net',
 		method: 'POST',
 		data: $(this).serialize(),
 		dataType: 'json',
