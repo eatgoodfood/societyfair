@@ -14,12 +14,12 @@ var $contactForm = $('#parties-form');
 $contactForm.submit(function(e) {
 	e.preventDefault();
 	$.ajax({
-		url: '//formspree.io/stephen@restauranteve.com',
+		url: '//formspree.io/parties@societyfair.net',
 		method: 'POST',
 		data: $(this).serialize(),
 		dataType: 'json',
 		beforeSend: function() {
-			$contactForm.append('<div class="row"><div class="small-12 small-centered columns"><div class="callout" data-closable><h5>Sending</h5></div>');
+			$contactForm.append('<div class="row"><div class="small-12 small-centered columns"><div class="callout alert--loading" data-closable><h5>Sending</h5></div>');
 		},
 		success: function(data) {
 			$contactForm.find('.alert--loading').hide();

@@ -19,7 +19,7 @@ $contactForm.submit(function(e) {
 		data: $(this).serialize(),
 		dataType: 'json',
 		beforeSend: function() {
-			$contactForm.append('<div class="row"><div class="small-12 small-centered columns"><div class="callout" data-closable><h5>Sending</h5></div>');
+			$contactForm.append('<div class="row"><div class="small-12 small-centered columns"><div class="callout alert--loading" data-closable><h5>Sending</h5></div>');
 		},
 		success: function(data) {
 			$contactForm.find('.alert--loading').hide();
