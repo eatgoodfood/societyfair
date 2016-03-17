@@ -1,7 +1,7 @@
 <div class="parties-wrapper small-12 medium-8 medium-offset-2 columns end">
 	<form id="parties-form" class="parties" accept-charset="UTF-8"  action="//formspree.io/parties@societyfair.net" method="POST">
 		<h1>Parties Inquiry Form</h1>
-		
+
 		<input type="hidden" name="utf8" value="✓">
 		<input type="hidden" name="_subject" value="New party request!" />
 		<input type="text" name="_gotcha" class="gotcha"/>
@@ -35,7 +35,7 @@
 			<div class="field">
 			    <div class="label-wrapper">
 			     	<label>Date
-						<input type="date" name="date" placeholder="Date" required pattern="date">
+						<input type="date" name="date" placeholder="Date" required pattern="date" data-format="dd/mm/yy">
 					</label>
 				</div>
 			</div>
@@ -56,28 +56,14 @@
 		</fieldset> <!-- end fieldset 1 -->
 
 		<fieldset> <!-- start fieldset 2 -->
-			<legend>Your contact details</legend>
+			<legend>Contact details</legend>
 			<div class="field">
 			    <div class="label-wrapper">
-			    	<label>Contact name
+			    	<label>Name
 		  				<input type="text" name="name" id="right-label" placeholder="John Doe">
 		  			</label>
 		  		</div>
 		  	</div>
-			<div class="field">
-			    <div class="label-wrapper">
-			    	<label>Company name
-						<input type="text" name="company" placeholder="My Corp">
-					</label>
-				</div>
-			</div>
-			<div class="field">
-			    <div class="label-wrapper">
-			    	<label>Address, City, State, ZIP
-						<input type="text" name="address" placeholder="Address">
-					</label>
-				</div>
-			</div>
 			<div class="field">
 			    <div class="label-wrapper">
 			    	<label>Email
@@ -89,13 +75,6 @@
 			    <div class="label-wrapper">
 			    	<label>Phone
 						<input type="text" name="phone" placeholder="Phone">
-					</label>
-				</div>
-			</div>
-			<div class="field">
-			    <div class="label-wrapper">
-			    	<label>Fax
-						<input type="text" name="fax" placeholder="Fax">
 					</label>
 				</div>
 			</div>
@@ -116,4 +95,11 @@
 	  		<button type="submit" value="send">Send</button>
 	  	</div>
 	</form>
+	<!--<div class="row" id="thankyou_message" style="display:none;">
+  		<div class="small-12 small-centered columns">
+  			<div class="callout alert--loading" data-closable>
+  				<h5>Your inquiry has been sent</h5>
+  			</div>
+  		</div>
+  	</div>-->
 </div>

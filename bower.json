@@ -1,0 +1,34 @@
+{
+  "name": "societyfair",
+  "homepage": "https://github.com/eatgoodfood/societyfair",
+  "authors": [
+    "Stephen Chapman <stephen@restauranteve.com>"
+  ],
+  "description": "bower file for societyfair",
+  "main": "bower.json",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "html5shiv": "^3.7.3"
+  },
+  "resolutions": {
+
+  }
+}

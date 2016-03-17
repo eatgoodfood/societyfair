@@ -3,7 +3,7 @@
 
 <!doctype html>
 <!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
-<html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
+<html class="no-js" lang="en-US" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,6 +20,13 @@
     <link rel="alternate" type="application/rss+xml" title="" href="http://parties.societyfair.net/feed.xml">
 
     <link rel="stylesheet" href="../../assets/stylesheets/style.css" />
+
+    <!-- Polyfiller -->
+
+    <script src="../../assets/javascripts/vendor/modernizr/modernizr-custom.js"></script>
+    <!--[if lt IE 9]>
+    <script src="../../bower_components/html5shiv/dist/html5shiv.js"></script>
+    <![endif]-->
 
     <!-- Foundation Favicons -->
     <link href="http://foundation-forum0.zurbstatic.com/assets/favicon-47a37f0a0e941bf5966d5d4e8a66de14.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
@@ -46,7 +53,7 @@
   <div class="parties-wrapper small-12 medium-8 medium-offset-2 columns end">
 	<form id="parties-form" class="parties" accept-charset="UTF-8"  action="//formspree.io/parties@societyfair.net" method="POST">
 		<h1>Parties Inquiry Form</h1>
-		
+
 		<input type="hidden" name="utf8" value="✓">
 		<input type="hidden" name="_subject" value="New party request!" />
 		<input type="text" name="_gotcha" class="gotcha"/>
@@ -80,7 +87,7 @@
 			<div class="field">
 			    <div class="label-wrapper">
 			     	<label>Date
-						<input type="date" name="date" placeholder="Date" required pattern="date">
+						<input type="date" name="date" placeholder="Date" required pattern="date" data-format="dd/mm/yy">
 					</label>
 				</div>
 			</div>
@@ -101,28 +108,14 @@
 		</fieldset> <!-- end fieldset 1 -->
 
 		<fieldset> <!-- start fieldset 2 -->
-			<legend>Your contact details</legend>
+			<legend>Contact details</legend>
 			<div class="field">
 			    <div class="label-wrapper">
-			    	<label>Contact name
+			    	<label>Name
 		  				<input type="text" name="name" id="right-label" placeholder="John Doe">
 		  			</label>
 		  		</div>
 		  	</div>
-			<div class="field">
-			    <div class="label-wrapper">
-			    	<label>Company name
-						<input type="text" name="company" placeholder="My Corp">
-					</label>
-				</div>
-			</div>
-			<div class="field">
-			    <div class="label-wrapper">
-			    	<label>Address, City, State, ZIP
-						<input type="text" name="address" placeholder="Address">
-					</label>
-				</div>
-			</div>
 			<div class="field">
 			    <div class="label-wrapper">
 			    	<label>Email
@@ -134,13 +127,6 @@
 			    <div class="label-wrapper">
 			    	<label>Phone
 						<input type="text" name="phone" placeholder="Phone">
-					</label>
-				</div>
-			</div>
-			<div class="field">
-			    <div class="label-wrapper">
-			    	<label>Fax
-						<input type="text" name="fax" placeholder="Fax">
 					</label>
 				</div>
 			</div>
@@ -161,6 +147,13 @@
 	  		<button type="submit" value="send">Send</button>
 	  	</div>
 	</form>
+	<!--<div class="row" id="thankyou_message" style="display:none;">
+  		<div class="small-12 small-centered columns">
+  			<div class="callout alert--loading" data-closable>
+  				<h5>Your inquiry has been sent</h5>
+  			</div>
+  		</div>
+  	</div>-->
 </div>
 
 </section>
@@ -185,6 +178,5 @@
 	<script src="../../assets/javascripts/vendor/jquery/jquery-2.1.4.min.js"></script>
   	<script src="../../assets/javascripts/foundation.min.js"></script>
   	<script src="../../assets/javascripts/scripts.js"></script>
-
 	</body>
 </html>
