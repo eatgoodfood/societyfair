@@ -9,14 +9,14 @@
 section.parties-form {
 
 	@include breakpoint(medium) {
-		background: #333;
+		background: $primary-color;
 	}
 }
 
 form.parties {	
-	background: #fff;
+	background: $white;
 	padding: 1rem 1rem;
-	border-top: 4px solid #ad4daf;
+	//border-top: 4px solid #ad4daf;
 
 	@include breakpoint(medium) {
 		padding: 1rem 2rem;
@@ -42,7 +42,7 @@ form.parties {
 		@extend .fieldset;
 
 		@include breakpoint(medium) {
-			border: 3px solid #efefef;
+			border: 0px solid #efefef;
 		}
 
 		legend {
