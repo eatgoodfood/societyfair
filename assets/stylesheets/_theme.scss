@@ -2,7 +2,7 @@
 // Foundation-Jekyll - Custom Theme Styles
 //
 body {
-  background-color: $primary-color;
+  background-color: $white;
   color: $grey;
 }
 
@@ -75,6 +75,16 @@ $menu-background: #292c2f;
   background-size: contain;
   height: 20vh;
   overflow: hidden;
+  margin-top: 1rem;
+
+  	@include breakpoint(small) {
+		background-color: $grey;
+	}
+
+	@include breakpoint(medium) {
+		background-color: $white;
+	}
+
   h1 {
     color: #fff;
     text-align: center;
@@ -83,28 +93,46 @@ $menu-background: #292c2f;
 }
 
 .footer {
-  background-color: #292c2f;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: $small-font-size;
   padding: 4rem;
-  p {
-    &.slogan {
-      color: #8d9093;
-      font-size: 1.8rem;
-      margin: 0 0 1rem;
-    }
-    &.copywrite {
-      color: #8f9296;
-      font-size: 0.875rem;
-      margin: 0;
-    }
-  }
+
+	@include breakpoint(small) {
+		background-color: $grey;
+		text-align: center;
+	}
+
+	@include breakpoint(medium) {
+		background-color: $white;
+	}
+
+	p {
+		&.address {
+			margin: 0 0 1rem;
+
+			@include breakpoint(small) {
+				color: $white;
+			}
+
+			@include breakpoint(medium) {
+				color: $grey;
+			}
+		}
+	}
   .links a {
     list-style: none;
     font-weight: bold;
-    color: #ffffff;
     padding: 3rem 0 2rem;
     margin: 0;
+
+    	@include breakpoint(small) {
+			color: $white;
+		}
+
+		@include breakpoint(medium) {
+			color: $grey;
+		}
+
     &::after {
       content: "•";
       padding: 0 0.4rem 0 0.8rem;
@@ -113,6 +141,22 @@ $menu-background: #292c2f;
       content: "";
       padding: 0 0.4rem 0 0.8rem;
     }
+  }
+  .footer-stripe {
+  	//background-color: $accent-color;
+  	p {
+  		&.copywrite {
+	    	margin: 0;
+
+	    	@include breakpoint(small) {
+				color: $white;
+			}
+
+			@include breakpoint(medium) {
+				color: $grey;
+			}
+    	}
+  	}
   }
 }
 
